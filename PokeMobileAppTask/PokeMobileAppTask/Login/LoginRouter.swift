@@ -23,4 +23,14 @@ class LoginRouter: PresenterToRouterLoginProtocol {
 
         return view
     }
+    
+    func navigateToRegistrationScreen(from view: UIViewController) {
+        let registrationVC = RegistrationRouter.createModule()
+        view.navigationController?.pushViewController(registrationVC, animated: true)
+    }
+    
+    func navigateToHomeScreen(from view: UIViewController) {
+        let homeVC = HomeRouter.createModule()
+        view.navigationController?.pushViewController(homeVC, animated: true)
+    }
 }

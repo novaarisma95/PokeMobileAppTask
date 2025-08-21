@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="PokeMobileAppTask" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="sPy-i6-gWS" id="uh2-QS-Ell"/>
+                <outlet property="createPassword" destination="y8w-KM-DSa" id="0fl-bm-kPN"/>
+                <outlet property="emailTextfield" destination="mr7-Tt-UB8" id="5nQ-7x-iZF"/>
+                <outlet property="fieldStackView" destination="s6N-6Q-0lj" id="R8m-TW-Ykf"/>
+                <outlet property="fullnameTextfield" destination="Rck-kd-Jrj" id="HWK-aA-mZQ"/>
+                <outlet property="signUpButton" destination="8sI-eK-s58" id="AyG-vi-H9B"/>
+                <outlet property="titleLabel" destination="O16-J9-gy9" id="dRO-Lz-juh"/>
+                <outlet property="usernameTexfield" destination="VhD-oM-P6k" id="r7e-SP-Omf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sPy-i6-gWS">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O16-J9-gy9">
+                    <rect key="frame" x="151" y="274.33333333333331" width="91.333333333333314" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="s6N-6Q-0lj">
+                    <rect key="frame" x="16" y="326.66666666666669" width="361" height="199.00000000000006"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-oM-P6k">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-kd-Jrj">
+                            <rect key="frame" x="0.0" y="55" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-Tt-UB8">
+                            <rect key="frame" x="0.0" y="110" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-KM-DSa">
+                            <rect key="frame" x="0.0" y="165" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sI-eK-s58">
+                    <rect key="frame" x="16" y="557.66666666666663" width="361" height="34.333333333333371"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8sI-eK-s58" secondAttribute="bottom" constant="32" id="0fH-K1-DTf"/>
+                <constraint firstItem="sPy-i6-gWS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Q1-uc-OmI"/>
+                <constraint firstItem="s6N-6Q-0lj" firstAttribute="top" secondItem="O16-J9-gy9" secondAttribute="bottom" constant="32" id="8Gq-GT-3qE"/>
+                <constraint firstItem="sPy-i6-gWS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Mq-qq-NeH"/>
+                <constraint firstItem="8sI-eK-s58" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ewq-4o-fbe"/>
+                <constraint firstAttribute="bottom" secondItem="sPy-i6-gWS" secondAttribute="bottom" id="QpR-ee-9sf"/>
+                <constraint firstItem="8sI-eK-s58" firstAttribute="top" secondItem="s6N-6Q-0lj" secondAttribute="bottom" constant="32" id="TLV-Tk-2z1"/>
+                <constraint firstItem="O16-J9-gy9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VOr-Lf-mlk"/>
+                <constraint firstItem="s6N-6Q-0lj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Wax-RA-U88"/>
+                <constraint firstItem="s6N-6Q-0lj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oWD-2D-l9B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8sI-eK-s58" secondAttribute="trailing" constant="16" id="rwh-g7-LzI"/>
+                <constraint firstItem="sPy-i6-gWS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="u87-qb-45Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="s6N-6Q-0lj" secondAttribute="trailing" constant="16" id="uOR-ml-ct8"/>
+            </constraints>
+            <point key="canvasLocation" x="35.877862595419849" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="186.33332824707031" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

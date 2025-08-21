@@ -10,14 +10,20 @@ import UIKit
 
 class LoginInteractor: PresenterToInteractorLoginProtocol {
     weak var presenter: InteractorToPresenterLoginProtocol?
+    var retry: Int = 0
     
     func login(email: String, password: String) {
-        // Dummy login validation
         if email == "codeid@gmail.com" && password == "123456" {
             let user = User(email: email, password: password)
             presenter?.loginSucceeded(user: user)
+            retry = 0
         } else {
-            presenter?.loginFailed(error: "Email atau password salah")
+            retry += 1
+            if retry < 3 {
+                presenter?.loginFailed(error: "Email atau password salah")
+            } else if retry > 3 {
+                presenter?.loginFailed(error: "Ayo registrasi dulu")
+            }
         }
     }
 }

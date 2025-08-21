@@ -15,6 +15,8 @@ protocol ViewToPresenterLoginProtocol: AnyObject {
     var router: PresenterToRouterLoginProtocol? { get set }
     
     func loginButtonTapped(email: String, password: String)
+    func regisButtonTapped()
+    func navigateToHomeLanding()
 }
 
 // MARK: - Presenter -> View
@@ -38,5 +40,7 @@ protocol InteractorToPresenterLoginProtocol: AnyObject {
 // MARK: - Presenter -> Router
 protocol PresenterToRouterLoginProtocol: AnyObject {
     static func createModule() -> UIViewController
+    func navigateToRegistrationScreen(from view: UIViewController)
+    func navigateToHomeScreen(from view: UIViewController)
 }
 

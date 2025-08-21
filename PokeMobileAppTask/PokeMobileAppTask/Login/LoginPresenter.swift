@@ -16,6 +16,18 @@ class LoginPresenter: ViewToPresenterLoginProtocol {
     func loginButtonTapped(email: String, password: String) {
         interactor?.login(email: email, password: password)
     }
+    
+    func regisButtonTapped() {
+        if let vc = view as? UIViewController {
+            router?.navigateToRegistrationScreen(from: vc)
+        }
+    }
+    
+    func navigateToHomeLanding() {
+        if let vc = view as? UIViewController {
+            router?.navigateToHomeScreen(from: vc)
+        }
+    }
 }
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
